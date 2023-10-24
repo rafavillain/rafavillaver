@@ -1,0 +1,16 @@
+@import "../../../src/App.scss";
+
+.btn {
+    padding: rem(16);
+    border: none;
+    color: white;
+    cursor: pointer;
+
+    &--primary {
+        background-color: $c-primary;
+    }
+
+    &--secondary {
+        background-color: $c-secondary;
+    }
+}

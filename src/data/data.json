@@ -1,0 +1,615 @@
+{
+    "charts": [
+        {
+            "id": "climate-change",
+            "title": "Cambio climatico",
+            "elements_lvl2": [
+                {
+                    "id": "energy-consumption",
+                    "title": "Consumo energético",
+                    "elements_lvl3": [
+                        {
+                            "id": "organization-energy-consumption",
+                            "title": "Consumo energético dentro de la organización",
+                            "subtitle": "Consumo de energía dentro de la organización distinguiendo por renovable y no renovable.",
+                            "refs": [
+                                {
+                                    "text": "ref1"
+                                },
+                                {
+                                    "text": "ref2"
+                                }
+                            ],
+                            "note": "Nota: Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nostrum nihil, amet nam, nesciunt aliquam corporis recusandae fuga maxime eaque quisquam tenetur ullam, reiciendis ex libero. Harum tenetur tempora maxime.",
+                            "type": "bar",
+                            "chartData": [
+                                {
+                                    "labels": [
+                                        "2019",
+                                        "2020",
+                                        "2021",
+                                        "2022",
+                                        "2023"
+                                    ],
+                                    "datasets": [
+                                        {
+                                            "yAxisID": "left-y-axis",
+                                            "label": "Electricidad renovable",
+                                            "data": [
+                                                1200377,
+                                                1176026,
+                                                4051166,
+                                                4579718,
+                                                0
+                                            ],
+                                            "backgroundColor": "rgb(38 55 70)",
+                                            "stack": "combined",
+                                            "borderColor": "transparent",
+                                            "borderWidth": 2,
+                                            "borderRadius": 4
+                                        },
+                                        {
+                                            "yAxisID": "left-y-axis",
+                                            "label": "Electricidad no renovable",
+                                            "data": [
+                                                5604581,
+                                                5542132,
+                                                1472328,
+                                                1452931,
+                                                0
+                                            ],
+                                            "backgroundColor": "rgb(150, 211, 221)",
+                                            "stack": "combined",
+                                            "borderColor": "transparent",
+                                            "borderWidth": 2,
+                                            "borderRadius": 4
+                                        }
+                                    ]
+                                }
+                            ],
+                            "options": {
+                                "barThickness": 40,
+                                "scales": {
+                                    "y": {
+                                        "left": {
+                                            "title": "test title left"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "id": "out-of-organization-energy-consumption",
+                            "title": "Consumo energético fuera de la organización",
+                            "subtitle": "Consumo de energía dentro de la organización distinguiendo por renovable y no renovable.",
+                            "elements_lvl4": [
+                                {
+                                    "id": "gei-emissions-3",
+                                    "title": "Emisiones GEI 3",
+                                    "subtitle": "Consumo de energía dentro de la organización distinguiendo por renovable y no renovable 3.",
+                                    "refs": [
+                                        {
+                                            "text": "ref3"
+                                        },
+                                        {
+                                            "text": "ref4"
+                                        }
+                                    ],
+                                    "note": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nostrum nihil, amet nam, nesciunt aliquam corporis recusandae fuga maxime eaque quisquam tenetur ullam, reiciendis ex libero. Harum tenetur tempora maxime.",
+                                    "type": "bar",
+                                    "chartData": [
+                                        {
+                                            "labels": [
+                                                "2019",
+                                                "2020",
+                                                "2021",
+                                                "2022",
+                                                "2023"
+                                            ],
+                                            "datasets": [
+                                                {
+                                                    "label": "Artículos y servicios adquiridos",
+                                                    "data": [
+                                                        974814584,
+                                                        840350989,
+                                                        881182432,
+                                                        916549137,
+                                                        0
+                                                    ],
+                                                    "backgroundColor": "#263746",
+                                                    "yAxisID": "left-y-axis"
+                                                },
+                                                {
+                                                    "label": "Actividades relacionadas con el combustible y la energía",
+                                                    "data": [
+                                                        10464669,
+                                                        9247680,
+                                                        12605341,
+                                                        11247289,
+                                                        0
+                                                    ],
+                                                    "backgroundColor": "#96D3DD",
+                                                    "yAxisID": "left-y-axis"
+                                                },
+                                                {
+                                                    "label": "Transporte y distribución corriente arriba",
+                                                    "data": [
+                                                        19631956,
+                                                        15512116,
+                                                        16170663,
+                                                        15728550,
+                                                        0
+                                                    ],
+                                                    "backgroundColor": "#3A727A",
+                                                    "yAxisID": "left-y-axis"
+                                                },
+                                                {
+                                                    "label": "Transporte y distribución corriente abajo",
+                                                    "data": [
+                                                        6629947,
+                                                        5471002,
+                                                        5555217,
+                                                        5734657,
+                                                        0
+                                                    ],
+                                                    "backgroundColor": "#BEC3C8",
+                                                    "yAxisID": "left-y-axis"
+                                                },
+                                                {
+                                                    "label": "Uso de los productos vendidos",
+                                                    "data": [
+                                                        786177937,
+                                                        652632957,
+                                                        658566498,
+                                                        711008867,
+                                                        0
+                                                    ],
+                                                    "backgroundColor": "#67737D",
+                                                    "yAxisID": "left-y-axis"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "options": {
+                                        "barThickness": 18,
+                                        "scales": {
+                                            "y": {
+                                                "left": {
+                                                    "title": "Consumo energético (GJ)"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "id": "gei-emissions-4",
+                                    "title": "Emisiones GEI 4",
+                                    "subtitle": "Consumo de energía dentro de la organización distinguiendo por renovable y no renovable 4.",
+                                    "type": "line",
+                                    "chartData": [
+                                        {
+                                            "labels": [
+                                                "2019",
+                                                "2020",
+                                                "2021",
+                                                "2022",
+                                                "2023"
+                                            ],
+                                            "datasets": [
+                                                {
+                                                    "label": "Alcance 1",
+                                                    "data": [
+                                                        3062,
+                                                        5214,
+                                                        5290,
+                                                        5280,
+                                                        0
+                                                    ],
+                                                    "backgroundColor": "rgb(38 55 70)",
+                                                    "stack": "combined",
+                                                    "borderColor": "transparent",
+                                                    "borderWidth": 2,
+                                                    "borderRadius": 4
+                                                },
+                                                {
+                                                    "label": "Alcance 2 (ubicación)",
+                                                    "data": [],
+                                                    "backgroundColor": "rgb(150 211 221)",
+                                                    "stack": "combined",
+                                                    "borderColor": "transparent",
+                                                    "borderWidth": 2,
+                                                    "borderRadius": 4
+                                                },
+                                                {
+                                                    "label": "Alcance 2 (mercado)",
+                                                    "data": [],
+                                                    "backgroundColor": "rgb(58 114 122)",
+                                                    "stack": "combined",
+                                                    "borderColor": "transparent",
+                                                    "borderWidth": 2,
+                                                    "borderRadius": 4
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "energy-intensity",
+                            "title": "Intensidad energética",
+                            "subtitle": "Consumo de energía dentro de la organización distinguiendo por renovable y no renovable.",
+                            "type": "scatter",
+                            "chartData": [
+                                {
+                                    "labels": [
+                                        "2019",
+                                        "2020",
+                                        "2021",
+                                        "2022",
+                                        "2023"
+                                    ],
+                                    "datasets": [
+                                        {
+                                            "type": "line",
+                                            "label": "Line Dataset",
+                                            "backgroundColor": "#263746",
+                                            "borderColor": "#263746",
+                                            "data": [
+                                                50,
+                                                20,
+                                                10,
+                                                50,
+                                                20
+                                            ],
+                                            "yAxisID": "left-y-axis"
+                                        },
+                                        {
+                                            "type": "bar",
+                                            "label": "Bar Dataset",
+                                            "backgroundColor": "rgb(150 211 221)",
+                                            "data": [
+                                                100,
+                                                200,
+                                                300,
+                                                400,
+                                                202
+                                            ],
+                                            "yAxisID": "right-y-axis"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "options": {
+                                "barThickness": 100,
+                                "scales": {
+                                    "y": {
+                                        "left": {
+                                            "title": "test title left scatter"
+                                        },
+                                        "right": {
+                                            "title": "test title right scatter"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "gei-emissions-1",
+                    "title": "Emisiones GEI",
+                    "elements_lvl3": [
+                        {
+                            "id": "gei-emissions-2",
+                            "title": "Emisiones GEI",
+                            "subtitle": "Consumo de energía dentro de la organización distinguiendo por renovable y no renovable",
+                            "elements_lvl4": [
+                                {
+                                    "id": "gei-emissions-3",
+                                    "title": "Emisiones GEI 3",
+                                    "subtitle": "Consumo de energía dentro de la organización distinguiendo por renovable y no renovable 3.",
+                                    "type": "bar",
+                                    "chartData": [
+                                        {
+                                            "labels": [
+                                                "2019",
+                                                "2020",
+                                                "2021",
+                                                "2022",
+                                                "2023"
+                                            ],
+                                            "datasets": [
+                                                {
+                                                    "label": "Alcance 1",
+                                                    "data": [
+                                                        6062,
+                                                        5214,
+                                                        5290,
+                                                        5280,
+                                                        0
+                                                    ],
+                                                    "backgroundColor": "rgb(38 55 70)",
+                                                    "stack": "combined",
+                                                    "borderColor": "transparent",
+                                                    "borderWidth": 2,
+                                                    "borderRadius": 4
+                                                },
+                                                {
+                                                    "label": "Alcance 2 (ubicación)",
+                                                    "data": [],
+                                                    "backgroundColor": "rgb(150 211 221)",
+                                                    "stack": "combined",
+                                                    "borderColor": "transparent",
+                                                    "borderWidth": 2,
+                                                    "borderRadius": 4
+                                                },
+                                                {
+                                                    "label": "Alcance 2 (mercado)",
+                                                    "data": [],
+                                                    "backgroundColor": "rgb(58 114 122)",
+                                                    "stack": "combined",
+                                                    "borderColor": "transparent",
+                                                    "borderWidth": 2,
+                                                    "borderRadius": 4
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "gei-emissions-4",
+                                    "title": "Emisiones GEI 4",
+                                    "subtitle": "Consumo de energía dentro de la organización distinguiendo por renovable y no renovable 4.",
+                                    "type": "line",
+                                    "chartData": [
+                                        {
+                                            "labels": [
+                                                "2019",
+                                                "2020",
+                                                "2021",
+                                                "2022",
+                                                "2023"
+                                            ],
+                                            "datasets": [
+                                                {
+                                                    "label": "Alcance 1",
+                                                    "data": [
+                                                        1062,
+                                                        5214,
+                                                        5290,
+                                                        5280,
+                                                        0
+                                                    ],
+                                                    "backgroundColor": "rgb(38 55 70)",
+                                                    "stack": "combined",
+                                                    "borderColor": "transparent",
+                                                    "borderWidth": 2,
+                                                    "borderRadius": 4
+                                                },
+                                                {
+                                                    "label": "Alcance 2 (ubicación)",
+                                                    "data": [],
+                                                    "backgroundColor": "rgb(150 211 221)",
+                                                    "stack": "combined",
+                                                    "borderColor": "transparent",
+                                                    "borderWidth": 2,
+                                                    "borderRadius": 4
+                                                },
+                                                {
+                                                    "label": "Alcance 2 (mercado)",
+                                                    "data": [],
+                                                    "backgroundColor": "rgb(58 114 122)",
+                                                    "stack": "combined",
+                                                    "borderColor": "transparent",
+                                                    "borderWidth": 2,
+                                                    "borderRadius": 4
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "gei-emissions-3",
+                            "title": "Emisiones GEI 3",
+                            "subtitle": "Consumo de energía dentro de la organización distinguiendo por renovable y no renovable.",
+                            "type": "line",
+                            "chartData": [
+                                {
+                                    "labels": [
+                                        "January",
+                                        "February",
+                                        "March",
+                                        "April",
+                                        "May",
+                                        "June",
+                                        "July"
+                                    ],
+                                    "datasets": [
+                                        {
+                                            "label": "Dataset 1",
+                                            "data": [
+                                                65,
+                                                59,
+                                                80,
+                                                81,
+                                                56,
+                                                55,
+                                                40
+                                            ],
+                                            "borderColor": "rgb(255, 99, 132)",
+                                            "backgroundColor": "rgba(255, 99, 132, 0.5)"
+                                        },
+                                        {
+                                            "label": "Dataset 2",
+                                            "data": [
+                                                1,
+                                                9,
+                                                20,
+                                                61,
+                                                16,
+                                                5,
+                                                12
+                                            ],
+                                            "borderColor": "rgb(53, 162, 235)",
+                                            "backgroundColor": "rgba(53, 162, 235, 0.5)"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "methane-emissions",
+                            "title": "Emisiones de metano",
+                            "subtitle": "Consumo de energía dentro de la organización distinguiendo por renovable y no renovable.",
+                            "type": "line",
+                            "chartData": [
+                                {
+                                    "labels": [
+                                        "January",
+                                        "February",
+                                        "March",
+                                        "April",
+                                        "May",
+                                        "June",
+                                        "July"
+                                    ],
+                                    "datasets": [
+                                        {
+                                            "label": "Dataset 1",
+                                            "data": [
+                                                65,
+                                                59,
+                                                80,
+                                                81,
+                                                56,
+                                                55,
+                                                40
+                                            ],
+                                            "borderColor": "rgb(255, 99, 132)",
+                                            "backgroundColor": "rgba(255, 99, 132, 0.5)"
+                                        },
+                                        {
+                                            "label": "Dataset 2",
+                                            "data": [
+                                                1,
+                                                9,
+                                                20,
+                                                61,
+                                                16,
+                                                5,
+                                                12
+                                            ],
+                                            "borderColor": "rgb(53, 162, 235)",
+                                            "backgroundColor": "rgba(53, 162, 235, 0.5)"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "gei-emissions-3",
+            "title": "Emisiones GEI 3",
+            "subtitle": "Consumo de energía dentro de la organización distinguiendo por renovable y no renovable 3.",
+            "refs": [
+                {
+                    "text": "ref3"
+                },
+                {
+                    "text": "ref4"
+                }
+            ],
+            "note": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nostrum nihil, amet nam, nesciunt aliquam corporis recusandae fuga maxime eaque quisquam tenetur ullam, reiciendis ex libero. Harum tenetur tempora maxime.",
+            "type": "line",
+            "chartData": [
+                {
+                    "labels": [
+                        "2019",
+                        "2020",
+                        "2021",
+                        "2022",
+                        "2023"
+                    ],
+                    "datasets": [
+                        {
+                            "label": "Artículos y servicios adquiridos",
+                            "data": [
+                                974814584,
+                                840350989,
+                                881182432,
+                                916549137,
+                                0
+                            ],
+                            "backgroundColor": "#263746",
+                            "yAxisID": "left-y-axis"
+                        },
+                        {
+                            "label": "Actividades relacionadas con el combustible y la energía",
+                            "data": [
+                                10464669,
+                                9247680,
+                                12605341,
+                                11247289,
+                                0
+                            ],
+                            "backgroundColor": "#96D3DD",
+                            "yAxisID": "left-y-axis"
+                        },
+                        {
+                            "label": "Transporte y distribución corriente arriba",
+                            "data": [
+                                19631956,
+                                15512116,
+                                16170663,
+                                15728550,
+                                0
+                            ],
+                            "backgroundColor": "#3A727A",
+                            "yAxisID": "left-y-axis"
+                        },
+                        {
+                            "label": "Transporte y distribución corriente abajo",
+                            "data": [
+                                6629947,
+                                5471002,
+                                5555217,
+                                5734657,
+                                0
+                            ],
+                            "backgroundColor": "#BEC3C8",
+                            "yAxisID": "left-y-axis"
+                        },
+                        {
+                            "label": "Uso de los productos vendidos",
+                            "data": [
+                                786177937,
+                                652632957,
+                                658566498,
+                                711008867,
+                                0
+                            ],
+                            "backgroundColor": "#67737D",
+                            "yAxisID": "left-y-axis"
+                        }
+                    ]
+                }
+            ],
+            "options": {
+                "barThickness": 18,
+                "scales": {
+                    "y": {
+                        "left": {
+                            "title": "Consumo energético (GJ)"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

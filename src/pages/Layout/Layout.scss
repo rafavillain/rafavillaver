@@ -1,0 +1,32 @@
+@import "../../../src/App.scss";
+
+.layout {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+        flex-direction: row;
+    }
+
+    &__aside {
+        background: rgb(230, 230, 230);
+        padding: rem(16);
+
+        @include tablet {
+            min-height: 100vh;
+            width: rem(200);
+        }
+
+        li {
+            margin-bottom: rem(8);
+        }
+    }
+
+    &__header {
+        margin-bottom: rem(8);
+    }
+
+    &__main {
+        margin: auto;
+    }
+}
