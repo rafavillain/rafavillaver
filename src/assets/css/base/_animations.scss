@@ -1,0 +1,102 @@
+@keyframes progress-bullet {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes rv-fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes rv-fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes rv-slide-up {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-15%);
+  }
+}
+
+@keyframes rv-slide-down {
+  from {
+    transform: translateY(15%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes rv-slide-up-fade-in {
+  from {
+    transform: translateY(15%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rv-slide-up-fade-out {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(-15%);
+    opacity: 0;
+  }
+}
+
+@keyframes rv-slide-down-fade-out {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(15%);
+    opacity: 0;
+  }
+}
+
+@keyframes rv-fade-out-collapse {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    height: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,53 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+#{$pre}wrapper {
+  width: 100%;
+  max-width: $g-max-width + $g-padding-mobile * 2;
+  padding-left: $g-padding-mobile;
+  padding-right: $g-padding-mobile;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include breakpoint(tablet) {
+    max-width: $g-max-width + $g-padding * 2;
+    padding-left: $g-padding;
+    padding-right: $g-padding;
+  }
+
+  @include breakpoint(desktop-large) {
+    overflow: visible;
+  }
+
+  &--no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &--no-padding-mob {
+    padding-left: 0;
+    padding-right: 0;
+
+    @include breakpoint(mobile) {
+      padding-left: $g-padding-mobile;
+      padding-right: $g-padding-mobile;
+    }
+
+    @include breakpoint(tablet) {
+      padding-left: $g-padding;
+      padding-right: $g-padding;
+    }
+  }
+
+  &--md {
+    @include breakpoint(tablet) {
+      max-width: $g-max-width-md + $g-padding * 2;
+      overflow: visible;
+    }
+  }
+}

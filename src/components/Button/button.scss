@@ -1,0 +1,206 @@
+#{$pre}button {
+  $i: &;
+  
+  @include font-style($t-link);
+  position: relative;
+  transform-origin: center center;
+  display: inline-flex;
+  gap: rem(12);
+  align-items: center;
+  justify-content: center;
+  min-width: rem(168);
+  min-height: rem(48);
+  padding: rem(12) rem(20);
+  overflow: hidden;
+  border-radius: rem(24);
+  outline: rem(2) solid transparent;
+  outline-offset: 0;
+  background-color: $c-aurora03;
+  color: $c-aurora06;
+  transition: trans(background-color), trans(border-color), trans(color),
+    trans(outline-color);
+
+  @include breakpoint(mobile) {
+    max-width: rem(343);
+  }
+
+  @include hover {
+    background-color: $c-aurora01;
+    color: $c-aurora02;
+  }
+
+  span {
+    position: relative;
+    z-index: $z-content;
+    pointer-events: none;
+  }
+
+  &:active {
+    background-color: $c-hover;
+    color: $c-aurora02;
+
+    &[data-au-button-hover]::after {
+      content: none;
+    }
+  }
+
+  &:focus-visible {
+    border: 1px solid $c-aurora02;
+    outline-color: $c-focus;
+    background-color: $c-hover;
+    color: $c-aurora02;
+
+    &[data-au-button-hover]::after {
+      content: none;
+    }
+  }
+
+  &:disabled,
+  &.disabled {
+    background-color: $c-darkblue5;
+    color: $c-darkblue40;
+    pointer-events: none;
+
+    &[data-au-button-hover]::after {
+      content: none;
+    }
+  }
+
+  &--inverted {
+    background-color: $c-aurora01;
+    color: $c-aurora02;
+    
+    @include hover {
+      background-color: $c-aurora03;
+      color: $c-aurora06;
+    }
+
+    &:active {
+      background-color: $c-aurora01;
+    }
+
+    &[data-au-button-hover] {
+      &::after {
+        background-image: $gr-radial-inverse;
+      }
+    }
+  }
+
+  &--secondary {
+    border: 1px solid transparent;
+    background-color: $c-tintblue5;
+    color: $c-aurora01;
+
+    @include hover {
+      background-color: $c-tintblue15;
+      color: $c-hover;
+    }
+
+    &:active {
+      background-color: $c-darkblue30;
+      color: $c-hover;
+    }
+
+    &:focus-visible {
+      border-color: $c-aurora02;
+      outline-color: $c-focus;
+      background-color: $c-tintblue30;
+      color: $c-hover;
+    }
+  }
+
+  &--ghost {
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: $c-aurora01;
+
+    @include hover {
+      background-color: $c-tintblue15;
+      color: $c-hover;
+    }
+
+    &:focus-visible,
+    &:active {
+      background-color: $c-tintblue30;
+      color: $c-hover;
+    }
+
+    &:disabled,
+    &.disabled {
+      background-color: transparent;
+      color: $c-darkblue30;
+    }
+  }
+
+  &--ghost-inverted {
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: $c-aurora02;
+
+    @include hover {
+      background-color: $c-tintblue15;
+      color: $c-hover;
+    }
+
+    &:focus-visible,
+    &:active {
+      background-color: $c-tintblue30;
+      color: $c-hover;
+    }
+
+    &:disabled,
+    &.disabled {
+      background-color: transparent;
+      color: $c-darkblue30;
+    }
+  }
+
+  &--icon-only {
+    gap: 0;
+    justify-content: center;
+    width: rem(48);
+    min-width: 0;
+    height: rem(48);
+    padding: 0;
+
+    &[data-au-button-hover]::after {
+      border-radius: 50%;
+    }
+  }
+
+  &--medium {
+    min-height: rem(40);
+    padding: rem(8) rem(20);
+
+    &#{$i}--icon-only {
+      width: rem(40);
+      height: rem(40);
+      padding: 0;
+    }
+  }
+
+  &--small {
+    min-height: rem(32);
+    padding: rem(4) rem(20);
+
+    &#{$i}--icon-only {
+      width: rem(32);
+      height: rem(32);
+      padding: 0;
+    }
+  }
+
+  .material-symbols-rounded,
+  .icon {
+    font-size: rem(20);
+    pointer-events: none;
+
+    &:last-child {
+      margin-left: auto;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

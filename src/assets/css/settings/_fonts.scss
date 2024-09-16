@@ -1,0 +1,47 @@
+@import 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded';
+
+@font-face {
+  font-weight: normal;
+  font-family: opensanslight;
+  font-style: normal;
+  src:
+    url('./../fonts/OpenSans/OpenSans-Light.woff2') format('woff2'),
+    url('./../fonts/OpenSans/OpenSans-Light.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: opensansregular;
+  font-style: normal;
+  src:
+    url('./../fonts/OpenSans/OpenSans-Regular.woff2') format('woff2'),
+    url('./../fonts/OpenSans/OpenSans-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: opensansmedium;
+  font-style: normal;
+  src:
+    url('./../fonts/OpenSans/OpenSans-Medium.woff2') format('woff2'),
+    url('./../fonts/OpenSans/OpenSans-Medium.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: opensansbold;
+  font-style: normal;
+  src:
+    url('./../fonts/OpenSans/OpenSans-Bold.woff2') format('woff2'),
+    url('./../fonts/OpenSans/OpenSans-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+$material-symbols: 'Material Symbols Rounded' !default;
+$f-light: 'opensanslight', sans-serif !default;
+$f-regular: 'opensansregular', sans-serif !default;
+$f-medium: 'opensansmedium', sans-serif !default;
+$f-bold: 'opensansbold', sans-serif !default;

@@ -1,0 +1,39 @@
+#{$pre}layout {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(tablet) {
+        flex-direction: row-reverse;
+    }
+
+    &__aside {
+        display: flex;
+        flex-direction: column;
+        padding: rem(16);
+        background: $c-aurora06;
+
+        @include breakpoint(tablet) {
+            min-height: 100vh;
+            width: rem(300);
+        }
+
+        nav > ul {
+            display: flex;
+            flex-direction: column;
+            gap: rem(32);
+            margin-top: rem(60);
+        }
+
+        *:not(input) {
+            color: $c-aurora02;
+        }
+    }
+
+    &__header {
+        margin-bottom: rem(8);
+    }
+
+    &__main {
+        flex-grow: 1;
+    }
+}

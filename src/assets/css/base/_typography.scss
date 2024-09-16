@@ -1,0 +1,13 @@
+html {
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  font-size: 100%;
+}
+
+body,
+button {
+  @extend %t-body;
+  color: $c-aurora06;
+}

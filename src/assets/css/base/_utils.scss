@@ -1,0 +1,95 @@
+#{$pre} {
+  /* animations */
+  &fade-in {
+    animation: rv-fade-in .3s ease;
+    animation-fill-mode: forwards;
+  }
+
+  &fade-out {
+    animation: rv-fade-out .3s ease;
+    animation-fill-mode: forwards;
+  }
+
+  &slide-up {
+    animation: rv-slide-up .3s ease;
+    animation-fill-mode: forwards;
+  }
+
+  &slide-down {
+    animation: rv-slide-down .3s ease;
+    animation-fill-mode: forwards;
+  }
+
+  &slide-up-fade-out {
+    animation: rv-slide-up-fade-out .3s ease;
+    animation-fill-mode: forwards;
+  }
+
+  &slide-down-fade-out {
+    animation: rv-slide-down-fade-out .3s ease;
+    animation-fill-mode: forwards;
+  }
+
+  &fade-out-collapse {
+    animation: rv-fade-out-collapse .3s ease;
+    animation-fill-mode: forwards;
+  }
+
+  /* visibility */
+  &visually-hidden {
+    @include hidden;
+
+    &--mobile {
+      @media (max-width: $bp-tablet - 1) {
+        @include hidden;
+      }
+    }
+  }
+
+  &hide {
+    display: none;
+  }
+
+  &row {
+    @include breakpoint(desktop) {
+      display: flex;
+      gap: rem(16);
+
+      &--center {
+        align-items: center;
+      }
+    }
+  }
+
+  &overflow-visible-on-desktop {
+    @include breakpoint(desktop) {
+      overflow: visible;
+    }
+  }
+
+  &wrap {
+    flex-wrap: wrap;
+  }
+
+  &break-column-on-tablet {
+    @include breakpoint(tablet) {
+      break-after: column;
+    }
+  }
+
+  &module-margin-bottom {
+    margin-bottom: rem(50);
+
+    @include breakpoint(tablet) {
+      margin-bottom: rem(100);
+    }
+  }
+
+  &bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+  }
+}

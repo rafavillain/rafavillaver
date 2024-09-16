@@ -1,0 +1,139 @@
+#{$pre}link {
+  $i: &;
+
+  @include font-style($t-link);
+  position: relative;
+  display: inline-flex;
+  gap: rem(8);
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: rem(4);
+  outline: rem(2) solid transparent;
+  outline-offset: 0;
+  color: $c-aurora01;
+  transition: trans(border-color), trans(outline-color);
+
+  span {
+    transition: trans(color);
+    pointer-events: none;
+  }
+
+  @include hover {
+    color: $c-hover;
+  }
+
+  &:focus-visible {
+    border-color: $c-aurora02;
+    outline-color: $c-focus;
+    color: $c-hover;
+
+    span {
+      &.material-symbols-rounded,
+      &.icon {
+        transition: 0s;
+      }
+    }
+  }
+
+  &:active {
+    color: $c-hover;
+  }
+
+  &--inline {
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+
+    span {
+      text-decoration: underline;
+      transition: trans(color), trans(text-decoration-color);
+      text-decoration-color: transparent;
+    }
+
+    @include hover {
+      span {
+        text-decoration-color: $c-hover;
+      }
+    }
+
+    &:active,
+    &:focus-visible {
+      span {
+        text-decoration-color: $c-hover;
+      }
+    }
+  }
+
+  &--dark {
+    color: $c-aurora06;
+  }
+
+  &--inverted {
+    color: $c-aurora02;
+
+    #{$i}__btn {
+      background-color: $c-aurora01;
+      color: $c-aurora02;
+    }
+
+    [data-au-button-hover-link] {
+      &::after {
+        background-image: $gr-radial-inverse;
+      }
+    }
+
+    @include hover {
+      span {
+        color: $c-tintblue30;
+      }
+    }
+
+    &:focus-visible {
+      border-color: $c-aurora02;
+      outline-color: $c-focus;
+      color: $c-tintblue30;
+    }
+
+    &:active {
+      span {
+        color: $c-tintblue30;
+      }
+    }
+
+    &#{$i}--inline {
+      @include hover {
+        span {
+          text-decoration-color: $c-tintblue30;
+        }
+      }
+
+      &:active,
+      &:focus-visible {
+        span {
+          text-decoration-color: $c-tintblue30;
+        }
+      }
+    }
+  }
+
+  &--disabled {
+    color: $c-darkblue30;
+    pointer-events: none;
+
+    #{$i}__btn {
+      background-color: $c-darkblue30;
+      color: $c-aurora02;
+    }
+
+    &#{$i}--inverted #{$i}__btn {
+      border-color: $c-darkblue30;
+      background-color: transparent;
+      color: $c-darkblue30;
+    }
+  }
+
+  &__icon {
+    font-size: inherit;
+  }
+}

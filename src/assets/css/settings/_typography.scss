@@ -1,0 +1,129 @@
+/* stylelint-disable scss/dollar-variable-empty-line-before */
+// FONT STYLES
+$t-display: (
+  mobile: (
+    font: #{rem(48)} / 100% $f-medium,
+  ),
+  desktop: (
+    font-size: #{rem(80)},
+    line-height: 97.5%,
+  ),
+);
+
+$t-h1: (
+  mobile: (
+    font: #{rem(40)} / 120% $f-medium,
+  ),
+  desktop: (
+    font-size: #{rem(64)},
+    line-height: 100%,
+  ),
+);
+
+$t-h2: (
+  mobile: (
+    font: #{rem(28)} / 120% $f-regular,
+  ),
+  desktop: (
+    font-size: #{rem(40)},
+  ),
+);
+
+$t-h3: (
+  mobile: (
+    font: #{rem(24)} / 125% $f-regular,
+  ),
+  desktop: (
+    font-size: #{rem(30)},
+  ),
+);
+
+$t-h4: (
+  mobile: (
+    font: #{rem(18)} / 120% $f-regular,
+  ),
+  desktop: (
+    font-size: #{rem(20)},
+  ),
+);
+
+$t-body: (
+  mobile: (
+    font: #{rem(15)} / 150% $f-regular,
+  ),
+  desktop: (
+    font-size: #{rem(16)},
+  ),
+);
+
+$t-label: (
+  mobile: (
+    font: #{rem(14)} / 145% $f-regular,
+  ),
+);
+
+$t-link: (
+  mobile: (
+    font: #{rem(14)} / #{rem(20)} $f-regular,
+  ),
+);
+
+$t-detail: (
+  mobile: (
+    font: #{rem(12)} / 150% $f-regular,
+  ),
+);
+
+// FONT CLASSES
+%t-display,
+.t-display {
+  @include font-style($t-display);
+}
+
+%t-h1,
+.t-h1 {
+  @include font-style($t-h1);
+}
+
+%t-h2,
+.t-h2 {
+  @include font-style($t-h2);
+}
+
+%t-h3,
+.t-h3 {
+  @include font-style($t-h3);
+}
+
+%t-h4,
+.t-h4 {
+  @include font-style($t-h4);
+}
+
+%t-body,
+.t-body {
+  @include font-style($t-body);
+}
+
+%t-label,
+.t-label,
+%t-h5,
+.t-h5 {
+  @include font-style($t-label);
+}
+
+%t-detail,
+.t-detail,
+%t-h6,
+.t-h6 {
+  @include font-style($t-detail);
+}
+
+%t-link,
+.t-link {
+  @include font-style($t-link);
+}
+
+strong {
+  font-family: $f-bold;
+}

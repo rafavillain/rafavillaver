@@ -1,0 +1,72 @@
+#{$pre}hero {
+    $i: &;
+    width: 100%;
+    min-height: rem(400);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+    @include breakpoint(tablet) {
+        min-height: rem(600);
+    }
+
+    &__title,
+    &__description {
+        color: $c-aurora06;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        &:after {
+            content: '';
+            display: flex;
+            height: 100%;
+            width: 100%;
+            background-color: rgba($color: $c-aurora02, $alpha: 0.9);
+            position: absolute;
+            left: 0;
+            top: 0;
+            backdrop-filter: blur(8px);
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: rem(24);
+        position: relative;
+        padding: rem(24);
+
+        @include breakpoint(tablet) {
+            align-items: center;
+            padding: rem(48);
+        }
+    }
+
+    &--secondary {
+        #{$i}__img {
+            &:after {
+                background-color: rgba($color: $c-aurora03, $alpha: 0.9);
+            }
+        }
+    }
+
+    &--fullwidth {
+        min-height: 100vh;
+    }
+}

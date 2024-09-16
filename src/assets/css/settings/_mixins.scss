@@ -1,0 +1,238 @@
+/* stylelint-disable @stylistic/max-line-length */
+@use 'sass:map';
+
+/*** Responsive media queries
+ * use:
+ * .element {
+ *   @include breakpoint(mobile|tablet|desktop|desktop-large){
+ *     ...
+ *   }
+ * }
+ */
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == '' {
+    @content;
+  } @else {
+    /* Retrieves the value from the key */
+    $value: map.get($breakpoints, $breakpoint);
+
+    /* If the key exists in the map */
+    @if $value {
+      /* Prints a media query based on the value */
+      @media (min-width: $value) {
+        @content;
+      }
+    }
+
+    /* If the key doesn't exist in the map */
+    @else {
+      @warn 'Unfortunately, no value could be retrieved from `#{$breakpoint}`.' + ' Please make sure it is defined in `$breakpoints` map.';
+    }
+  }
+}
+
+// @mixin icon-styles($family: $icons-font-family) {
+//   display: inline-block;
+//   font-weight: normal;
+//   font-size: 1rem;
+//   font-family: '#{$family}';
+//   font-style: normal;
+//   font-variant: normal;
+//   line-height: 1;
+//   text-transform: none;
+//   speak: none;
+
+//   /* Better Font Rendering ============ */
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+
+/*** Mixin for adding icons to element without need of adding classes
+ * use:
+ * .element{
+ *   @include icon($icon-arrow-right) {
+ *     ...custom styles...
+ *   }
+ * }
+ */
+@mixin icon($icon: false, $position: before, $styles: true) {
+  /* Either a :before or :after pseudo-element, default to :before */
+  &::#{$position} {
+    @if $icon {
+      content: '#{$icon}';
+    }
+
+    @if $styles {
+      @include icon-styles;
+    }
+
+    /* Include any extra rules supplied for the pseudo-element */
+    @content;
+  }
+}
+
+@mixin material-symbol($icon: false, $position: before, $styles: true) {
+  /* Either a :before or :after pseudo-element, default to :before */
+  &::#{$position} {
+    @if $icon {
+      content: '#{$icon}';
+    }
+
+    @if $styles {
+      @include icon-styles($material-symbols);
+      font-feature-settings: 'liga';
+    }
+
+    /* Include any extra rules supplied for the pseudo-element */
+    @content;
+  }
+}
+
+/* Adds styles to hide content use in checkbox */
+@mixin hidden {
+  position: absolute;
+  visibility: visible;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  border: 0;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+}
+
+/*** Include font styles.
+ * use:
+ * .element {
+ *   @include font-style($t-h1);
+ * }
+ */
+@mixin font-style($style) {
+  $mobile: map.get($style, 'mobile');
+
+  @if not map.has-key($style, 'mobile') {
+    @error 'Unable to find a token with the name: `#{$style}`';
+  }
+
+  @each $name, $value in $mobile {
+    #{$name}: $value;
+  }
+
+  @if map.has-key($style, 'desktop') {
+    $desktop: map.get($style, 'desktop');
+
+    @include breakpoint(desktop) {
+      @each $name, $value in $desktop {
+        #{$name}: $value;
+      }
+    }
+  }
+}
+
+/* ELLIPSIS */
+@mixin ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/*** Truncate text into a number of lines with ellipsis
+ * use:
+ * .element {
+ *   @include line-clamp(3);
+ * }
+ */
+@mixin line-clamp($lines) {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  overflow: hidden;
+}
+
+/* Utility to make a card fully clickable
+   Use:
+    .card {
+      @include clickable;
+    }
+*/
+@mixin clickable($tag: 'a') {
+  position: relative;
+
+  #{$tag} {
+    &::before {
+      position: absolute;
+      z-index: $z-content;
+      content: '';
+      cursor: pointer;
+      border: rem(2) solid transparent;
+      outline: rem(2) solid transparent;
+      transition: trans(background-color), trans(border-color),
+        trans(outline-color);
+      inset: 0;
+    }
+
+    &:focus-visible {
+      outline: 0;
+
+      &::before {
+        border-color: $c-focus;
+        box-shadow: inset 0 0 1px 2px $c-aurora02;
+      }
+    }
+  }
+}
+
+/* Media query to control hover state
+   Use:
+    .card {
+      @include hover {
+        background-color: red;
+      }
+    }
+*/
+@mixin hover {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+/* Media query to control hover state
+   Use:
+    .card {
+      @include slope($c-aurora01, 'vertical');
+    }
+*/
+@mixin slope($color, $dir: 'horizontal') {
+  position: relative;
+  z-index: $z-content;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: $z-below;
+    transform-origin: top right;
+    content: '';
+    background-color: $color;
+    transition: trans(background-color);
+  }
+
+  @if $dir == 'horizontal' {
+    &::before {
+      transform: rotate(19.6deg);
+      width: calc(100% + rem(80));
+      height: rem(260);
+    }
+  } @else if $dir == 'vertical' {
+    &::before {
+      transform: rotate(-19.6deg);
+      width: rem(240);
+      height: calc(100% + rem(80));
+    }
+  } @else {
+    @warn 'Unfortunately, that direction is not valid';
+  }
+}

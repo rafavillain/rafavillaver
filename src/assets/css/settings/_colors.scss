@@ -1,0 +1,90 @@
+/* COLORS */
+
+/* Brand Colors */
+$c-blue: #047dba;
+$c-white: #fff;
+$c-green: #90ffbb;
+$c-pink: #f3bdff;
+$c-yellow: #e0ff48;
+$c-darkblue: #004656;
+
+/* Names */
+$c-aurora01: $c-blue;
+$c-aurora02: $c-white;
+$c-aurora03: $c-green;
+$c-aurora04: $c-pink;
+$c-aurora05: $c-yellow;
+$c-aurora06: $c-darkblue;
+
+/* Blue Tints */
+$c-tintblue100: $c-aurora01;
+$c-tintblue90: #1d8ac1;
+$c-tintblue80: #3697c8;
+$c-tintblue70: #4fa4cf;
+$c-tintblue60: #68b1d6;
+$c-tintblue50: #81bedd;
+$c-tintblue40: #9bcbe3;
+$c-tintblue30: #b4d8ea;
+$c-tintblue20: #cde5f1;
+$c-tintblue15: #d9ecf5;
+$c-tintblue5: #f2f8fc;
+
+/* Dark Blue Tints */
+$c-darkblue100: $c-aurora06;
+$c-darkblue90: #1a5967;
+$c-darkblue80: #336b78;
+$c-darkblue70: #4d7e89;
+$c-darkblue60: #66909a;
+$c-darkblue50: #80a2aa;
+$c-darkblue40: #99b5bb;
+$c-darkblue30: #b2c7cc;
+$c-darkblue20: #ccdadd;
+$c-darkblue15: #d9e3e6;
+$c-darkblue5: #f2f6f7;
+
+/* Miscelanea Colors */
+$c-hover: $c-aurora06;
+$c-focus: #0f62fe;
+$c-focusinset: $c-aurora02;
+$c-imageoverlay: rgba(#000c0f, 0.16);
+$c-bgoverlay: rgba($c-aurora06, 0.4);
+$c-error: #d52b1e;
+$c-success: #24a148;
+$c-warning: #f1c21b;
+
+/* Support Colors */
+$c-support01: #aefe7a;
+$c-support02: #00bdb9;
+$c-support03: #ffcfb5;
+$c-support04: #7f9fff;
+$c-support05: #6cf3ff;
+
+/* Linear Gradient Colors */
+$gr-primaryright: linear-gradient(90deg, $c-aurora05 -10%, $c-support01 8%,
+$c-aurora03 25%, $c-support02 45%, $c-aurora01 70%, $c-aurora01 100%);
+$gr-primaryleft: linear-gradient(270deg, $c-aurora05 -10%, $c-support01 8%,
+$c-aurora03 25%, $c-support02 45%, $c-aurora01 70%, $c-aurora01 100%);
+$gr-primarytop: linear-gradient(0deg, $c-aurora05 -10%, #67745e 8%,
+$c-aurora03 25%, $c-support02 45%, $c-aurora01 70%, $c-aurora01 100%);
+$gr-primarybottom: linear-gradient(180deg, $c-aurora05 -10%, $c-support01 8%,
+$c-aurora03 25%, $c-support02 45%, $c-aurora01 70%, $c-aurora01 100%);
+$gr-soft-horizontal: linear-gradient(300deg, $c-aurora03 -10%,
+$c-support02 25%, $c-aurora01 50%, $c-aurora01 100%);
+$gr-soft-vertical: linear-gradient(330deg, $c-aurora03 -10%,
+$c-support02 25%, $c-aurora01 50%, $c-aurora01 100%);
+
+/* Radial Gradient Colors */
+$gr-radial: radial-gradient(circle, $c-aurora01 0%, $c-aurora03 50%);
+$gr-radial-inverse: radial-gradient(circle, $c-aurora03 0%, $c-aurora01 50%);
+
+/* Transparent to white */
+$gr-whiteright: linear-gradient(90deg, transparent 0%, $c-white 100%);
+$gr-whiteleft: linear-gradient(270deg, transparent 0%, $c-white 100%);
+
+/* Transparent to dark blue */
+$gr-darkblueright: linear-gradient(90deg, transparent 0%, $c-aurora06 100%);
+$gr-darkblueleft: linear-gradient(270deg, transparent 0%, $c-aurora06 100%);
+
+/* Transparent to light blue */
+$gr-lightblueright: linear-gradient(90deg, transparent 0%, $c-tintblue5 100%);
+$gr-lightblueleft: linear-gradient(270deg, transparent 0%, $c-tintblue5 100%);

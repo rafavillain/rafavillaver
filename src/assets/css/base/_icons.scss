@@ -1,0 +1,476 @@
+// .icon {
+//   @include icon-styles;
+//   font-size: 1.5rem;
+// }
+
+// .icon-download-xls::before {
+//   content: $icon-download-xls;
+// }
+
+// .icon-facebook::before {
+//   content: $icon-facebook;
+// }
+
+// .icon-gow::before {
+//   content: $icon-gow;
+// }
+
+// .icon-instagram::before {
+//   content: $icon-instagram;
+// }
+
+// .icon-linkedin::before {
+//   content: $icon-linkedin;
+// }
+
+// .icon-tiktok::before {
+//   content: $icon-tiktok;
+// }
+
+// .icon-x::before {
+//   content: $icon-x;
+// }
+
+// .icon-youtube::before {
+//   content: $icon-youtube;
+// }
+
+// .icon-appstore::before {
+//   content: $icon-appstore;
+// }
+
+// .icon-playstore::before {
+//   content: $icon-playstore;
+// }
+
+// .icon-quote::before {
+//   content: $icon-quote;
+// }
+
+// .icon-list-bullet::before {
+//   content: $icon-list-bullet;
+// }
+
+// .icon-24h-2::before {
+//   content: $icon-24h-2;
+// }
+
+// .icon-24h::before {
+//   content: $icon-24h;
+// }
+
+// .icon-accesibility::before {
+//   content: $icon-accesibility;
+// }
+
+// .icon-arrow::before {
+//   content: $icon-arrow;
+// }
+
+// .icon-asphalts::before {
+//   content: $icon-asphalts;
+// }
+
+// .icon-aviation::before {
+//   content: $icon-aviation;
+// }
+
+// .icon-bluetooth::before {
+//   content: $icon-bluetooth;
+// }
+
+// .icon-boat::before {
+//   content: $icon-boat;
+// }
+
+// .icon-calendar::before {
+//   content: $icon-calendar;
+// }
+
+// .icon-car::before {
+//   content: $icon-car;
+// }
+
+// .icon-cart::before {
+//   content: $icon-cart;
+// }
+
+// .icon-car-wash::before {
+//   content: $icon-car-wash;
+// }
+
+// .icon-campus::before {
+//   content: $icon-campus;
+// }
+
+// .icon-cash-deck::before {
+//   content: $icon-cash-deck;
+// }
+
+// .icon-chat::before {
+//   content: $icon-chat;
+// }
+
+// .icon-chemistry::before {
+//   content: $icon-chemistry;
+// }
+
+// .icon-children-area::before {
+//   content: $icon-children-area;
+// }
+
+// .icon-cities::before {
+//   content: $icon-cities;
+// }
+
+// .icon-compensation::before {
+//   content: $icon-compensation;
+// }
+
+// .icon-coffee::before {
+//   content: $icon-coffee;
+// }
+
+// .icon-delete::before {
+//   content: $icon-delete;
+// }
+
+// .icon-detergent::before {
+//   content: $icon-detergent;
+// }
+
+// .icon-dressing-room::before {
+//   content: $icon-dressing-room;
+// }
+
+// .icon-documents::before {
+//   content: $icon-documents;
+// }
+
+// .icon-elevator::before {
+//   content: $icon-elevator;
+// }
+
+// .icon-electric-charge::before {
+//   content: $icon-electric-charge;
+// }
+
+// .icon-electric-parking::before {
+//   content: $icon-electric-parking;
+// }
+
+// .icon-emergency-exit::before {
+//   content: $icon-emergency-exit;
+// }
+
+// .icon-energy-park::before {
+//   content: $icon-energy-park;
+// }
+
+// .icon-ethics::before {
+//   content: $icon-ethics;
+// }
+
+// .icon-evaluation::before {
+//   content: $icon-evaluation;
+// }
+
+// .icon-exploration-production::before {
+//   content: $icon-exploration-production;
+// }
+
+// .icon-exterior-office::before {
+//   content: $icon-exterior-office;
+// }
+
+// .icon-fuel-pump::before {
+//   content: $icon-fuel-pump;
+// }
+
+// .icon-green-energy::before {
+//   content: $icon-green-energy;
+// }
+
+// .icon-guide::before {
+//   content: $icon-guide;
+// }
+
+// .icon-gym::before {
+//   content: $icon-gym;
+// }
+
+// .icon-health::before {
+//   content: $icon-health;
+// }
+
+// .icon-heart::before {
+//   content: $icon-heart;
+// }
+
+// .icon-home::before {
+//   content: $icon-home;
+// }
+
+// .icon-hvo::before {
+//   content: $icon-hvo;
+// }
+
+// .icon-hydrogen::before {
+//   content: $icon-hydrogen;
+// }
+
+// .icon-image::before {
+//   content: $icon-image;
+// }
+
+// .icon-info::before {
+//   content: $icon-info;
+// }
+
+// .icon-investment::before {
+//   content: $icon-investment;
+// }
+
+// .icon-lab::before {
+//   content: $icon-lab;
+// }
+
+// .icon-laptop::before {
+//   content: $icon-laptop;
+// }
+
+// .icon-leaf::before {
+//   content: $icon-leaf;
+// }
+
+// .icon-licence::before {
+//   content: $icon-licence;
+// }
+
+// .icon-list::before {
+//   content: $icon-list;
+// }
+
+// .icon-location::before {
+//   content: $icon-location;
+// }
+
+// .icon-lubes::before {
+//   content: $icon-lubes;
+// }
+
+// .icon-man::before {
+//   content: $icon-man;
+// }
+
+// .icon-medical-service::before {
+//   content: $icon-medical-service;
+// }
+
+// .icon-meeting-room::before {
+//   content: $icon-meeting-room;
+// }
+
+// .icon-mobile::before {
+//   content: $icon-mobile;
+// }
+
+// .icon-more::before {
+//   content: $icon-more;
+// }
+
+// .icon-motorcycle::before {
+//   content: $icon-motorcycle;
+// }
+
+// .icon-motorcycle-parking::before {
+//   content: $icon-motorcycle-parking;
+// }
+
+// .icon-no-smoking::before {
+//   content: $icon-no-smoking;
+// }
+
+// .icon-interior-office::before {
+//   content: $icon-interior-office;
+// }
+
+// .icon-oil::before {
+//   content: $icon-oil;
+// }
+
+// .icon-organic-waste::before {
+//   content: $icon-organic-waste;
+// }
+
+// .icon-organization-chart::before {
+//   content: $icon-organization-chart;
+// }
+
+// .icon-page::before {
+//   content: $icon-page;
+// }
+
+// .icon-paint::before {
+//   content: $icon-paint;
+// }
+
+// .icon-picto::before {
+//   content: $icon-picto;
+// }
+
+// .icon-plastic-waste::before {
+//   content: $icon-plastic-waste;
+// }
+
+// .icon-play::before {
+//   content: $icon-play;
+// }
+
+// .icon-prize::before {
+//   content: $icon-prize;
+// }
+
+// .icon-promo::before {
+//   content: $icon-promo;
+// }
+
+// .icon-printer::before {
+//   content: $icon-printer;
+// }
+
+// .icon-policy::before {
+//   content: $icon-policy;
+// }
+
+// .icon-recycling::before {
+//   content: $icon-recycling;
+// }
+
+// .icon-registered::before {
+//   content: $icon-registered;
+// }
+
+// .icon-relax-zone::before {
+//   content: $icon-relax-zone;
+// }
+
+// .icon-restaurant::before {
+//   content: $icon-restaurant;
+// }
+
+// .icon-results::before {
+//   content: $icon-results;
+// }
+
+// .icon-scooter::before {
+//   content: $icon-scooter;
+// }
+
+// .icon-service-station::before {
+//   content: $icon-service-station;
+// }
+
+// .icon-shower::before {
+//   content: $icon-shower;
+// }
+
+// .icon-stairs::before {
+//   content: $icon-stairs;
+// }
+
+// .icon-storage::before {
+//   content: $icon-storage;
+// }
+
+// .icon-soap::before {
+//   content: $icon-soap;
+// }
+
+// .icon-solar-power::before {
+//   content: $icon-solar-power;
+// }
+
+// .icon-sustainable-chemistry::before {
+//   content: $icon-sustainable-chemistry;
+// }
+
+// .icon-sustainable-product::before {
+//   content: $icon-sustainable-product;
+// }
+
+// .icon-support::before {
+//   content: $icon-support;
+// }
+
+// .icon-tanker-truck::before {
+//   content: $icon-tanker-truck;
+// }
+
+// .icon-talent::before {
+//   content: $icon-talent;
+// }
+
+// .icon-tractor::before {
+//   content: $icon-tractor;
+// }
+
+// .icon-trading::before {
+//   content: $icon-trading;
+// }
+
+// .icon-tree::before {
+//   content: $icon-tree;
+// }
+
+// .icon-truck-wash::before {
+//   content: $icon-truck-wash;
+// }
+
+// .icon-tower::before {
+//   content: $icon-tower;
+// }
+
+// .icon-uniform::before {
+//   content: $icon-uniform;
+// }
+
+// .icon-virtual-assistant::before {
+//   content: $icon-virtual-assistant;
+// }
+
+// .icon-washing-machine::before {
+//   content: $icon-washing-machine;
+// }
+
+// .icon-waste::before {
+//   content: $icon-waste;
+// }
+
+// .icon-water::before {
+//   content: $icon-water;
+// }
+
+// .icon-water-fountain::before {
+//   content: $icon-water-fountain;
+// }
+
+// .icon-wifi::before {
+//   content: $icon-wifi;
+// }
+
+// .icon-write::before {
+//   content: $icon-write;
+// }
+
+// .icon-woman::before {
+//   content: $icon-woman;
+// }
+
+// .icon-world::before {
+//   content: $icon-world;
+// }
+
+// .icon-worldwide::before {
+//   content: $icon-worldwide;
+// }

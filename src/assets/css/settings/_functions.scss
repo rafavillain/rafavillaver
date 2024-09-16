@@ -1,0 +1,56 @@
+/* stylelint-disable @stylistic/max-line-length */
+@use 'sass:math';
+
+/*** REM conversor
+ * use:
+ * .element {
+ *   height: rem(50);
+ * }
+ */
+@function rem($size) {
+  @return #{calc($size / 16)}rem;
+}
+
+/*** Grid width calculator
+ * use:
+ * .element {
+ *   width: flex-grid(1, 12);
+ * }
+ */
+@function flex-grid(
+  $columns,
+  $container-columns: $g-max-columns,
+  $gutter-width: $g-gutter
+) {
+  $width: $columns * $g-column + ($columns - 1) * $gutter-width;
+  $container-width: $container-columns * $g-column + ($container-columns - 1) * $gutter-width;
+
+  @return math.percentage(calc($width / $container-width));
+}
+
+/*** Grid margin & padding calculator. Same as above but with extra gutter
+ * use:
+ * .element {
+ *   width: spacing-grid(1, 12);
+ * }
+ */
+@function spacing-grid(
+  $columns,
+  $container-columns: $g-max-columns,
+  $gutter-width: $g-gutter
+) {
+  $width: $columns * $g-column + $columns * $gutter-width;
+  $container-width: $container-columns * $g-column + ($container-columns - 1) * $gutter-width;
+
+  @return math.percentage(calc($width / $container-width));
+}
+
+/*** Transitions parameters standarization
+ * use:
+ * .element {
+ *   transition: trans(background-color);
+ * }
+ */
+@function trans($effect) {
+  @return $effect 0.3s ease;
+}

@@ -1,0 +1,12 @@
+#{$pre}skill {
+  display: flex;
+  justify-content: space-between;
+  gap: rem(16);
+
+  &__value {
+    flex: 1;
+    border-radius: rem(16);
+    background-color: $c-aurora01;
+    color: $c-white;
+  }
+}
