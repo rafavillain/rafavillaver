@@ -2,12 +2,18 @@
 
 My site
 
+# Description
+
+Site to show my experience, carreer and skills as front-end developer
+
 ## Tech Stack
 
 |                            | Nombre    | Versión  |
 | ---                        | ---       | ---      |
-| **Language**               | Node      | v20.10.0 |
+| **Language**               | React     | v18.2.0  |
 | **Dependency Manager**     | Npm       | v10.2.3  |
+| **Bundler**                | Vite      | v4.4.5   |
+
 
 ### Prerrequisitos
 
