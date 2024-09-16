@@ -1,7 +1,7 @@
 #{$pre}skill {
   display: flex;
-  justify-content: space-between;
   gap: rem(16);
+  justify-content: space-between;
 
   &__value {
     flex: 1;

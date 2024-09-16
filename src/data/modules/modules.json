@@ -4,26 +4,26 @@
             "type": "",
             "title": "Hola!",
             "text": "Soy Rafa Villaver. Encantado de tenerte por aquí",
-            "img_mobile": "//unsplash.it/768/600",
-            "img_desktop": "//unsplash.it/1200/600",
-            "btn_text": "Conóceme"
+            "imgMobile": "//unsplash.it/768/600",
+            "imgDesktop": "//unsplash.it/1200/600",
+            "btnText": "Conóceme"
         },
         "secondary": {
             "type": "secondary",
             "title": "Hola!",
             "text": "Soy Rafa Villaver. Encantado de tenerte por aquí",
-            "img_mobile": "//unsplash.it/768/600",
-            "img_desktop": "//unsplash.it/1200/600",
-            "btn_text": "Conóceme"
+            "imgMobile": "//unsplash.it/768/600",
+            "imgDesktop": "//unsplash.it/1200/600",
+            "btnText": "Conóceme"
         },
         "fullwidth": {
             "type": "",
             "extraClass": "fullwidth",
             "title": "Hola!",
             "text": "Soy Rafa Villaver. Encantado de tenerte por aquí",
-            "img_mobile": "//unsplash.it/768/600",
-            "img_desktop": "//unsplash.it/1200/600",
-            "btn_text": "Conóceme"
+            "imgMobile": "//unsplash.it/768/600",
+            "imgDesktop": "//unsplash.it/1200/600",
+            "btnText": "Conóceme"
         }
     }
 }

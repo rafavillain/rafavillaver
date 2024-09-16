@@ -60,18 +60,56 @@ $c-support04: #7f9fff;
 $c-support05: #6cf3ff;
 
 /* Linear Gradient Colors */
-$gr-primaryright: linear-gradient(90deg, $c-aurora05 -10%, $c-support01 8%,
-$c-aurora03 25%, $c-support02 45%, $c-aurora01 70%, $c-aurora01 100%);
-$gr-primaryleft: linear-gradient(270deg, $c-aurora05 -10%, $c-support01 8%,
-$c-aurora03 25%, $c-support02 45%, $c-aurora01 70%, $c-aurora01 100%);
-$gr-primarytop: linear-gradient(0deg, $c-aurora05 -10%, #67745e 8%,
-$c-aurora03 25%, $c-support02 45%, $c-aurora01 70%, $c-aurora01 100%);
-$gr-primarybottom: linear-gradient(180deg, $c-aurora05 -10%, $c-support01 8%,
-$c-aurora03 25%, $c-support02 45%, $c-aurora01 70%, $c-aurora01 100%);
-$gr-soft-horizontal: linear-gradient(300deg, $c-aurora03 -10%,
-$c-support02 25%, $c-aurora01 50%, $c-aurora01 100%);
-$gr-soft-vertical: linear-gradient(330deg, $c-aurora03 -10%,
-$c-support02 25%, $c-aurora01 50%, $c-aurora01 100%);
+$gr-primaryright: linear-gradient(
+  90deg,
+  $c-aurora05 -10%,
+  $c-support01 8%,
+  $c-aurora03 25%,
+  $c-support02 45%,
+  $c-aurora01 70%,
+  $c-aurora01 100%
+);
+$gr-primaryleft: linear-gradient(
+  270deg,
+  $c-aurora05 -10%,
+  $c-support01 8%,
+  $c-aurora03 25%,
+  $c-support02 45%,
+  $c-aurora01 70%,
+  $c-aurora01 100%
+);
+$gr-primarytop: linear-gradient(
+  0deg,
+  $c-aurora05 -10%,
+  #67745e 8%,
+  $c-aurora03 25%,
+  $c-support02 45%,
+  $c-aurora01 70%,
+  $c-aurora01 100%
+);
+$gr-primarybottom: linear-gradient(
+  180deg,
+  $c-aurora05 -10%,
+  $c-support01 8%,
+  $c-aurora03 25%,
+  $c-support02 45%,
+  $c-aurora01 70%,
+  $c-aurora01 100%
+);
+$gr-soft-horizontal: linear-gradient(
+  300deg,
+  $c-aurora03 -10%,
+  $c-support02 25%,
+  $c-aurora01 50%,
+  $c-aurora01 100%
+);
+$gr-soft-vertical: linear-gradient(
+  330deg,
+  $c-aurora03 -10%,
+  $c-support02 25%,
+  $c-aurora01 50%,
+  $c-aurora01 100%
+);
 
 /* Radial Gradient Colors */
 $gr-radial: radial-gradient(circle, $c-aurora01 0%, $c-aurora03 50%);

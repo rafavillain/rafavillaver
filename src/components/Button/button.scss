@@ -1,6 +1,6 @@
 #{$pre}button {
   $i: &;
-  
+
   @include font-style($t-link);
   position: relative;
   transform-origin: center center;
@@ -69,7 +69,7 @@
   &--inverted {
     background-color: $c-aurora01;
     color: $c-aurora02;
-    
+
     @include hover {
       background-color: $c-aurora03;
       color: $c-aurora06;

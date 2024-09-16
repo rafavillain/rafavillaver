@@ -1,39 +1,56 @@
 #{$pre}uikit {
-    padding: 0 rem(16);
-    
+  padding: 0 rem(16);
+
+  @include breakpoint(tablet) {
+    padding: 0 rem(32);
+  }
+
+  &__colors {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(48) rem(16);
+    margin-top: rem(32);
+
     @include breakpoint(tablet) {
-        padding: 0 rem(32);
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+
+  &__color {
+    position: relative;
+    padding: rem(16);
+    border: 1px solid $c-aurora06;
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(-100%);
     }
 
-    &__colors {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-        gap: rem(48) rem(16);
-        margin-top: rem(32);
-
-        @include breakpoint(tablet) {
-            grid-template-columns: repeat(6, 1fr);
-        }
+    &--aurora01 {
+      background-color: $c-aurora01;
     }
 
-    &__color {
-        position: relative;
-        padding: rem(16);
-        border: 1px solid $c-aurora06;
-
-        span {
-            position: absolute;
-            top: 0;
-            left: 0;
-            transform: translateY(-100%);
-        }
-
-        &--aurora01 { background-color: $c-aurora01; }
-        &--aurora02 { background-color: $c-aurora02; }
-        &--aurora03 { background-color: $c-aurora03; }
-        &--aurora04 { background-color: $c-aurora04; }
-        &--aurora05 { background-color: $c-aurora05; }
-        &--aurora06 { background-color: $c-aurora06; }
+    &--aurora02 {
+      background-color: $c-aurora02;
     }
+
+    &--aurora03 {
+      background-color: $c-aurora03;
+    }
+
+    &--aurora04 {
+      background-color: $c-aurora04;
+    }
+
+    &--aurora05 {
+      background-color: $c-aurora05;
+    }
+
+    &--aurora06 {
+      background-color: $c-aurora06;
+    }
+  }
 }

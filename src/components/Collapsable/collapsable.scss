@@ -2,10 +2,9 @@
   display: grid;
 
   &__trigger {
+    cursor: pointer;
     display: flex;
     align-items: center;
-    cursor: pointer;
-    @extend %t-h4;
   }
 
   &__content {

@@ -12,8 +12,8 @@
 
 body {
   overflow-x: hidden;
-  font-family: opensansregular, 'Century Gothic', Helvetica, Arial,
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  font-family: opensansregular, 'Century Gothic', Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji';
 
   /* Disable outline just when user is not tabbing */
   &:not(.user-is-tabbing) {
