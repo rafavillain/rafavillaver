@@ -1,4 +1,4 @@
-#{$pre}layout {
+#{$pre}dashboard {
   display: flex;
   flex-direction: column;
 
@@ -11,6 +11,7 @@
     flex-direction: column;
     padding: rem(16);
     background: $c-aurora06;
+    flex-shrink: 0;
 
     @include breakpoint(tablet) {
       width: rem(300);

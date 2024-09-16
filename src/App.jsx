@@ -1,5 +1,5 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
-import Layout from './pages/Layout/Layout'
+import Dashboard from './pages/Dashboard/Dashboard'
 import Uikit from './pages/Uikit/Uikit'
 import Blocks from './pages/Blocks/Blocks'
 import Home from './pages/Home/Home'
@@ -12,7 +12,7 @@ export default function App () {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<Layout />}>
+        <Route element={<Dashboard />}>
           <Route path='/uikit' element={<Uikit />} />
           <Route path='/blocks' element={<Blocks />} />
           {/* <Route path="/modules" element={<Modules />} /> */}

@@ -3,7 +3,7 @@ import homeData from './../../data/pages/home/home.json'
 
 function Home () {
   return (
-    <div className='home'>
+    <div className='rv-home'>
       <Hero data={homeData.hero} />
     </div>
   )
