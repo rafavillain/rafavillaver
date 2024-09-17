@@ -35,7 +35,7 @@ export default function Uikit () {
         </ul>
       </UiItem>
 
-      <UiItem title='Párrafo'>
+      <UiItem title='Párrafos'>
         <Paragraph text='Párrafo lorem ipsum dolor amet' />
         <Paragraph className='t-label' text='Label lorem ipsum dolor amet' />
         <Paragraph className='t-detail' text='Detail lorem ipsum dolor amet' />

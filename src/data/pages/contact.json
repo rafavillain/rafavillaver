@@ -1,0 +1,11 @@
+{
+    "hero": {
+        "type": "secondary",
+        "extraClass": "fullwidth",
+        "title": "Contacto",
+        "text": "Qué te pica?",
+        "imgMobile": "//unsplash.it/768/600",
+        "imgDesktop": "//unsplash.it/1200/600",
+        "btnText": "holi"
+    }
+}

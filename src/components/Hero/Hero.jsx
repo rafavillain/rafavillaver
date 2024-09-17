@@ -13,7 +13,8 @@ export default function Hero ({ data }) {
     imgDesktop,
     title,
     text,
-    btnText
+    btnText,
+    href
   } = data
 
   return (
@@ -43,6 +44,7 @@ export default function Hero ({ data }) {
         <Button
           uiType={type}
           text={btnText}
+          href={href}
           onClick={(e) => {
             console.log(e.target.innerText)
           }}

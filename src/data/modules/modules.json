@@ -6,7 +6,8 @@
             "text": "Soy Rafa Villaver. Encantado de tenerte por aquí",
             "imgMobile": "//unsplash.it/768/600",
             "imgDesktop": "//unsplash.it/1200/600",
-            "btnText": "Conóceme"
+            "btnText": "Conóceme",
+            "href": "https://www.linkedin.com/in/rafael-villaver-infante/"
         },
         "secondary": {
             "type": "secondary",
@@ -14,7 +15,8 @@
             "text": "Soy Rafa Villaver. Encantado de tenerte por aquí",
             "imgMobile": "//unsplash.it/768/600",
             "imgDesktop": "//unsplash.it/1200/600",
-            "btnText": "Conóceme"
+            "btnText": "Conóceme",
+            "href": "https://www.linkedin.com/in/rafael-villaver-infante/"
         },
         "fullwidth": {
             "type": "",
@@ -23,7 +25,8 @@
             "text": "Soy Rafa Villaver. Encantado de tenerte por aquí",
             "imgMobile": "//unsplash.it/768/600",
             "imgDesktop": "//unsplash.it/1200/600",
-            "btnText": "Conóceme"
+            "btnText": "Conóceme",
+            "href": "https://www.linkedin.com/in/rafael-villaver-infante/"
         }
     }
 }

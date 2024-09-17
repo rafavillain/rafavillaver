@@ -1,10 +1,12 @@
 .collapsable {
+  $i: &;
   display: grid;
 
   &__trigger {
     cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   &__content {
@@ -21,5 +23,23 @@
   &__content-inner {
     overflow: hidden;
     text-align: left;
+  }
+
+  &--l {
+    #{$i}__trigger {
+      @extend %t-h3;
+    }
+  }
+
+  &--m {
+    #{$i}__trigger {
+      @extend %t-h4;
+    }
+  }
+
+  &--s {
+    #{$i}__trigger {
+      @extend %t-h5;
+    }
   }
 }

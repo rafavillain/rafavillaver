@@ -1,10 +1,10 @@
 import Hero from '../../components/Hero/Hero'
-import homeData from './../../data/pages/home.json'
+import contactData from '../../data/pages/contact.json'
 
 function Home () {
   return (
     <div className='rv-home'>
-      <Hero data={homeData.hero} />
+      <Hero data={contactData.hero} />
     </div>
   )
 }

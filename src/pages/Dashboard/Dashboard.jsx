@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import Collapsable from './../../components/Collapsable/Collapsable'
+import Button from './../../components/Button/Button'
+// import isMobile from './../../assets/js/_utils'
 
 export default function Dashboard () {
   const menuItems = [
@@ -19,6 +21,14 @@ export default function Dashboard () {
         {
           href: '/hero',
           title: 'Hero'
+        },
+        {
+          href: '/hero-secondary',
+          title: 'Hero secondary'
+        },
+        {
+          href: '/hero-fullwidth',
+          title: 'Hero fullwidth'
         }
       ]
     },
@@ -29,12 +39,19 @@ export default function Dashboard () {
         {
           href: '/',
           title: 'Home'
+        },
+        {
+          href: '/contact',
+          title: 'Contact'
         }
       ]
     }
   ]
+  const windowWidth = window.innerWidth
+  const isMobile = windowWidth < 768
   const [filteredData, setFilteredData] = useState([])
   const [searchTerm, setSearchTerm] = useState('')
+  const [hideAside, setHideAside] = useState(isMobile)
 
   // Update filteredData whenever searchTerm changes
   useEffect(() => {
@@ -58,8 +75,18 @@ export default function Dashboard () {
   }, [searchTerm])
 
   return (
-    <div className='rv-dashboard'>
+    <div className={hideAside ? 'rv-dashboard rv-dashboard--hidden' : 'rv-dashboard'}>
+      <Button
+        uiType='inverted'
+        extraClass='rv-dashboard__toggle-aside rv-button--icon-only'
+        iconName={hideAside ? 'menu' : 'arrow_forward_ios'}
+        onClick={() => {
+          setHideAside(!hideAside)
+        }}
+      />
+
       <aside className='rv-dashboard__aside'>
+
         <header className='rv-dashboard__header'>
           RV logo
         </header>
@@ -67,6 +94,7 @@ export default function Dashboard () {
         <div className='rv-dashboard__menu'>
           <div className='rv-dashboard__search'>
             <input
+              hidden
               type='text'
               placeholder='Search Page, Module...'
               value={searchTerm}
@@ -75,16 +103,21 @@ export default function Dashboard () {
           </div>
 
           <nav>
-            <ul>
+            <ul className='rv-dashboard__ui-menu'>
               {filteredData.map(({ href, title, items }) => (
-                <li key={title}>
+                <li className='rv-dashboard__ui-group' key={title}>
                   {items &&
                     <>
-                      <Collapsable title={title}>
-                        <ul>
+                      <Collapsable extraClass='collapsable--m' title={title}>
+                        <ul className='rv-dashboard__ui-items-group'>
                           {Object.values(items).map(({ href, title }) => (
-                            <li key={title}>
-                              <NavLink to={href}>
+                            <li className='rv-dashboard__ui-item' key={title}>
+                              <NavLink
+                                to={href}
+                                onClick={() => {
+                                  setHideAside(true)
+                                }}
+                              >
                                 <p>{title}</p>
                               </NavLink>
                             </li>
@@ -94,7 +127,12 @@ export default function Dashboard () {
                     </>}
 
                   {!items &&
-                    <NavLink to={href}>
+                    <NavLink
+                      to={href}
+                      onClick={() => {
+                        setHideAside(true)
+                      }}
+                    >
                       <p className='t-h4'>{title}</p>
                     </NavLink>}
                 </li>

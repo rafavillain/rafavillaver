@@ -1,8 +1,8 @@
 #{$pre}uikit {
-  padding: 0 rem(16);
+  padding: rem(96) rem(16);
 
   @include breakpoint(tablet) {
-    padding: 0 rem(32);
+    padding: rem(96);
   }
 
   &__colors {

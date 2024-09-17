@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export default function Collapsable ({ title, children }) {
+export default function Collapsable ({ title, extraClass, children }) {
   const [isOpen, setState] = useState(false)
 
   const handleClickCollapsable = () => {
@@ -10,7 +10,7 @@ export default function Collapsable ({ title, children }) {
   const arrow = isOpen ? 'less' : 'more'
 
   return (
-    <div className='collapsable' open={isOpen}>
+    <div className={`collapsable ${extraClass}`} open={isOpen}>
       <button
         className='collapsable__trigger'
         onClick={handleClickCollapsable}
